@@ -2,32 +2,24 @@
 
 > _Reimagining psychiatric diagnosis through entropy, EEG signals, and powerful AI models._
 
----
-
 ## 📌 Abstract
 
-**EEG-SchizoDetect** presents a novel diagnostic framework for schizophrenia based on multichannel EEG analysis, entropy measures, and cutting-edge machine learning. Our system leverages entropy's sensitivity to neural complexity and integrates five powerful classifiers to identify schizophrenia with remarkable accuracy, even in early stages — potentially redefining clinical approaches.
-
----
+**EEG-SchizoDetect** presents a novel diagnostic framework for schizophrenia based on multichannel EEG analysis, entropy measures, and cutting-edge machine learning. Our system leverages entropy's sensitivity to neural complexity and integrates five powerful classifiers to identify schizophrenia with remarkable accuracy — potentially redefining clinical approaches.
 
 ## 🚀 Highlights
 
 - ✅ **97.39% Accuracy** using Ensemble Deep RVFL on 16 EEG channels  
 - 🔍 Multi-lobe entropy profiling across **frontal, temporal, parietal, occipital** regions  
-- 🧠 Signal complexity decoded via **Shannon, Sample, Approximate, Spectral, Tsallis entropy**
-- 🤖 Models tested: `GB`, `ELM`, `TELM`, `RVFL`, `edRVFL`
+- 🧠 Signal complexity decoded via **Shannon, Sample, Approximate, Spectral, Tsallis entropy**  
+- 🤖 Models tested: `GB`, `ELM`, `TELM`, `RVFL`, `edRVFL`  
 - 📊 Evaluated under k-fold cross-validation (5–10 folds)
-
----
 
 ## 🎯 Research Goals
 
-- Detect schizophrenia using non-invasive EEG signals
-- Assess how brain regions (via channel configurations) affect model accuracy
-- Benchmark multiple models to find optimal accuracy/performance trade-offs
+- Detect schizophrenia using non-invasive EEG signals  
+- Assess how brain regions (via channel configurations) affect model accuracy  
+- Benchmark multiple models to find optimal accuracy/performance trade-offs  
 - Build a reproducible ML pipeline for early diagnosis in real-world scenarios
-
----
 
 ## 🔬 Methodology
 
@@ -35,24 +27,21 @@
        │ EEG .edf Data│
        └──────┬───────┘
               ↓
-   ┌─────────────────────┐
+   ┌──────────────────────────┐
    │ Preprocessing & Epoching │
-   └──────┬──────────────┘
+   └──────┬───────────────────┘
           ↓
-   ┌──────────────────────┐
+   ┌────────────────────────────┐
    │ Entropy Feature Extraction │
-   └──────┬────────────────┘
+   └──────┬─────────────────────┘
           ↓
-   ┌──────────────────────┐
+   ┌─────────────────────────┐
    │ Feature Vector Creation │
-   └──────┬────────────────┘
+   └──────┬──────────────────┘
           ↓
-   ┌─────────────────────┐
+   ┌─────────────────────────────┐
    │ ML Model Training & Testing │
-   └─────────────────────┘
-
-
----
+   └─────────────────────────────┘
 
 ## 🧠 Feature Engineering
 
@@ -64,16 +53,12 @@
 | **Spectral Entropy**| Assesses energy distribution across EEG frequencies                         |
 | **Tsallis Entropy** | Generalized entropy measure for non-linear, long-range dependent signals     |
 
----
-
 ## 🧪 Experimental Configuration
 
-- Dataset: **RepOD EEG**, 28 subjects, 19 electrodes
-- Epoch Length: **2 seconds**, 500 samples per epoch
-- Preprocessing: Artifact filtering, epoch selection, normalization
+- Dataset: **RepOD EEG**, 28 subjects, 19 electrodes  
+- Epoch Length: **2 seconds**, 500 samples per epoch  
+- Preprocessing: Artifact filtering, epoch selection, normalization  
 - Tools: `MNE`, `pyEDFlib`, `NumPy`, `scikit-learn`, `TensorFlow`, `Pandas`
-
----
 
 ## 💻 Model Benchmarking
 
@@ -87,8 +72,6 @@
 
 📈 *Best results achieved on 16-channel configuration (frontal, temporal, parietal lobes).*
 
----
-
 ## 📁 Folder Structure
 
 ```bash
@@ -99,4 +82,19 @@
 ├── evaluation/         # ROC, metrics, result tables
 ├── results/            # Saved models, logs, charts
 └── README.md           # This file
+
+@project{eegschizodetect2025,
+  title={Multivariate EEG Analysis for Schizophrenia Detection: Leveraging Entropy Measures and Machine Learning Techniques across Channel Configurations},
+  author={Goyal, Tushar and Mishra, Utkarsh and Sharma, Vasant Kr and Shendre, Sayog},
+  year={2025},
+  institution={Motilal Nehru National Institute of Technology Allahabad}
+}
+
+
+
+---
+
+✅ Copy the code above into a file named `README.md` in your GitHub project.
+
+Let me know if you want to add badges, setup instructions, demo GIFs, or deploy it as a hosted web app.
 
