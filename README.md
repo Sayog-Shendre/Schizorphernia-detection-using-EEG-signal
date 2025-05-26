@@ -21,13 +21,15 @@
 - Benchmark multiple models to find optimal accuracy/performance trade-offs  
 - Build a reproducible ML pipeline for early diagnosis in real-world scenarios
 
-## 🔬 Methodology
 
-A[📂 EEG .edf Data] --> B[🔧 Preprocessing & Epoching]
+## 🚀 Pipeline Overview
+
+```mermaid
+flowchart TD
+    A[📂 EEG .edf Data] --> B[🔧 Preprocessing & Epoching]
     B --> C[📊 Entropy Feature Extraction]
     C --> D[🧮 Feature Vector Creation]
     D --> E[🤖 ML Model Training & Testing]
-
 ## 🧠 Feature Engineering
 
 | Feature             | Description                                                                 |
