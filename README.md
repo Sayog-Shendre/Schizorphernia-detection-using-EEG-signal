@@ -61,16 +61,7 @@
 ├── results/            # Saved models, logs, charts
 └── README.md           # This file
 
-@project{eegschizodetect2025,
-  title={Multivariate EEG Analysis for Schizophrenia Detection: Leveraging Entropy Measures and Machine Learning Techniques across Channel Configurations},
-  author={Goyal, Tushar and Mishra, Utkarsh and Sharma, Vasant Kr and Shendre, Sayog},
-  year={2025},
-  institution={Motilal Nehru National Institute of Technology Allahabad}
-}
 
-
-
----
 
 ✅ Copy the code above into a file named `README.md` in your GitHub project.
 
